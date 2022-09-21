@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens page</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #menContainer{
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2,340px);
+            grid-template-rows: repeat(1,auto);
+            align-items: center;
+        }
+        #menContainer>div{
+            padding: 20px;
+        }
+
+        img{
+            width: 100%;
+        }
+        p{
+            color: gray;
+        }
+
+        .priceDetails{
+            display: flex;
+            gap: 20px;
+            align-items: baseline;
+            margin-top: -20px;
+        }
+
+        h4{
+            text-decoration:line-through;
+            color: rgb(196, 192, 192);
+            font-weight: normal;
+        }
+        h5{
+            color: green;
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+
+            #menContainer{
+           
+            grid-template-columns: repeat(1,340px);
+            grid-template-rows: repeat(1,auto);
+        }
+
+        } 
+
+
+    </style>
+</head>
+<body>
+
+  <div id="menContainer">
+    <div>
+        <img src="https://i.pinimg.com/originals/a1/6a/7e/a16a7ee5b4928376dbe2eeb3f87c96fa.jpg" alt="">
+        <h3>Pause</h3>
+        <p>Men Cotton Long Sleeves Shurg</p>
+        <div class="priceDetails">
+            <h2>₹ 359</h2>
+            <h4>₹ 1,499</h4>
+            <h5>-76%</h5>
+        </div>
+
+    </div>
+
+    <div>
+        <img src="https://i.pinimg.com/originals/a1/6a/7e/a16a7ee5b4928376dbe2eeb3f87c96fa.jpg" alt="">
+        <h3>JUBINATION</h3>
+        <p>Men Wool Sleeveless Sweater Pack Of 1</p>
+        <div class="priceDetails">
+            <h2>₹ 799</h2>
+            <h4>₹ 1,499</h4>
+            <h5>-47%</h5>
+        </div>
+
+    </div>
+
+
+  </div>
+    
+</body>
+</html>
