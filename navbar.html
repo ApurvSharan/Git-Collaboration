@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+    #navbar{
+        /* border:0px solid black; */
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        height:70px;
+        border-radius: 20px;
+        font-size: 22px;
+        color: white;
+        background-color: rgb(15, 13, 27);
+    }
+    #navbar>div:first-child{
+        width:10%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    #navbar>div:last-child{
+        display: flex;
+        width:40%;
+        height:100%;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+   
+</style>
+<body>
+    <div id="navbar">
+        <div> Rebook</div>
+        <div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </div>
+</body>
+</html>
